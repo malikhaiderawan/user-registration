@@ -1,0 +1,20 @@
+
+    {% if messages %}
+    <div id="notification">
+        {% for message in messages %}
+            <span id="notification-message" class="{{ message.tags }}" style= "background-color: #dff0d8;
+    color: #3e8e41; ">{{ message }}</span>
+        {% endfor %}
+    </div>
+{% endif %}
+
+<script>
+    setTimeout(function() {
+        document.getElementById("notification").style.display = "none";
+    }, 5000); // 5000 milliseconds = 5 seconds
+</script>
+
+
+<h1> THis is admin page</h1>
+
+
